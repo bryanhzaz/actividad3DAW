@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<link rel="stylesheet" href="estilos.css">
 <html lang="es">
 <head>
     <meta charset="UTF-8">
@@ -8,7 +9,7 @@
 <body>
 
     <header>
-        <h1>Las mejores "streamers" de Fortnite</h1>
+        <p><strong>Los mejores "streamers" de Fortnite</strong></p>
         <p>En la siguiente página vamos a realizar un top de los mejores streamers de Fortnite.</p>
         <nav class="menu">
             <ul>
@@ -26,38 +27,50 @@
                     <tr>
                         <th>Nombre del Streamer</th>
                         <th>Link a su canal</th>
-                        <th>Seguidores Aproximados</th>
+                        <th>Foto</th>
+                        <th>¿Por qué son los mejores? (Mi opinión)</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
                         <td>lokotubedj</td>
                         <td><a href="https://www.twitch.tv/lokotubedj">Twitch</a></td>
-                        <td>18M</td>
+                        <td><img src="lokotube.png" width="100"></td>
+                        <td>Es uno de los pocos narradores de partidas de Fortnite competitivo en español.</td>
                     </tr>
                     <tr>
-                        <td>TheGrefg</td>
-                        <td>Twitch</td>
-                        <td>10M</td>
+                        <td>kiriosva</td>
+                        <td><a href="https://www.twitch.tv/kiriosva">Twitch</a></td>
+                        <td><img src="kiriosva.png" width="100"></td>
+                        <td>Es mi amigo, siempre lo regaño y a veces no soporta.</td>
                     </tr>
                     <tr>
-                        <td>Bugha</td>
-                        <td>Twitch</td>
-                        <td>5M</td>
+                        <td>Chigua</td>
+                        <td><a href="https://www.twitch.tv/chigusa2087">Twitch</a></td>
+                        <td>
+                            <video width="100" controls>
+                                <source src="chigua.mp4" type="video/mp4">
+                                Tu navegador no soporta el elemento de video.
+                            </video>
+                        </td>
+                        <td>Es mi otro amigo y cuando se enoja engruesa la voz. Además, se queda callado cuando se enoja en stream.</td>
                     </tr>
                     <tr>
-                        <td>Clix</td>
-                        <td>Twitch</td>
-                        <td>6M</td>
-                    </tr>
-                    <tr>
-                        <td>Mongraal</td>
-                        <td>Twitch / YouTube</td>
-                        <td>4.5M</td>
+                        <td>Mamá de Benjifishy</td>
+                        <td><a href="https://www.twitch.tv/mamabenjyfishy1">Twitch</a></td>
+                        <td><img src="mamabf.png" width="100"></td>
+                        <td>Es una señora que juega por diversión, demostrando que los videojuegos son para todos.</td>
                     </tr>
                 </tbody>
             </table>
         </section>
+
+        <article>
+            <h2>Destacado: Ninja</h2>
+            <p>Ninja es uno de los streamers más famosos de Fortnite. Ha ganado popularidad por su habilidad, carisma y colaboraciones con otras celebridades.</p>
+            <p>Su canal de Twitch tiene millones de seguidores y es considerado una leyenda en la comunidad de Fortnite.</p>
+            <p>Actualmente se retiró del "stream".</p>
+        </article>
 
         <aside>
             <h3>Algunos otros tops</h3>
@@ -69,6 +82,20 @@
 
     <footer>
         <p>&copy; 2025 - Página de streamers de Fortnite</p>
+        
+        <h3>Contacto</h3>
+        <form action="enviar.php" method="post">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required><br><br>
+
+            <label for="email">Correo Electrónico:</label>
+            <input type="email" id="email" name="email" required><br><br>
+
+            <label for="mensaje">Mensaje:</label><br>
+            <textarea id="mensaje" name="mensaje" rows="4" required></textarea><br><br>
+
+            <button type="submit">Enviar</button>
+        </form>
     </footer>
 
 </body>
